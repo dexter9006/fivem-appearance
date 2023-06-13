@@ -575,7 +575,7 @@ Config.ClothingRooms = {
             vector3(460.4231262207, -987.94573974609, 30.69)
         }
     },
-        {
+    {
         job = "ambulance",
         coords = vector4(301.25, -599.87, 43.28, 193.4),    -- Gabz
         width = 3,
@@ -596,6 +596,7 @@ Config.ClothingRooms = {
             minZ = 30.69 - 1.5,
             maxZ = 30.69 + 1.5,
         }
+    }
 }
 
 
