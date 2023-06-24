@@ -37,7 +37,7 @@ Config.EnablePedMenu = true
 Config.PedMenuGroup = "group.admin"
 
 Config.ShowNearestShopOnly = false
-Config.HideRadar = false -- Hides the minimap while the appearance menu is open
+Config.HideRadar = true -- Hides the minimap while the appearance menu is open
 Config.NearestShopBlipUpdateDelay = 10000
 
 Config.InvincibleDuringCustomization = true
@@ -49,7 +49,7 @@ Config.TrackerClothingOptions = {
 }
 
 Config.NewCharacterSections = {
-    Ped = true,
+    Ped = false,
     HeadBlend = true,
     FaceFeatures = true,
     HeadOverlays = true,
@@ -62,7 +62,7 @@ Config.GenderBasedOnPed = true
 
 Config.AlwaysKeepProps = false
 
-Config.PersistUniforms = false -- Keeps Job / Gang Outfits on player reconnects / logout
+Config.PersistUniforms = true -- Keeps Job / Gang Outfits on player reconnects / logout
 Config.OnDutyOnlyClothingRooms = true -- Set to `true` to make the clothing rooms accessible only to players who are On Duty
 
 Config.BossManagedOutfits = false -- Allows Job / Gang bosses to manage their own job / gang outfits
