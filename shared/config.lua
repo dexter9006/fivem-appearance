@@ -5,7 +5,7 @@ Config.Debug = false
 Config.ClothingCost = 100
 Config.BarberCost = 100
 Config.TattooCost = 500
-Config.SurgeonCost = 1000
+Config.SurgeonCost = 20000
 
 Config.ChargePerTattoo = true -- Charge players per tattoo. Config.TattooCost will become the cost of 1 tattoo. The cost can be overridden by adding `cost` key in shared/tattoos.lua for specific tattoos
 
@@ -14,7 +14,7 @@ Config.RCoreTattoosCompatibility = false
 
 Config.AsynchronousLoading = false -- Change this to false if you want the NUI data to load before displaying the appearance UI
 
-Config.UseTarget = false
+Config.UseTarget = true
 
 Config.TextUIOptions = {
     position = "left-center"
@@ -35,8 +35,6 @@ Config.EnablePedsForPlayerOutfitRooms = false
 
 Config.EnablePedMenu = true
 Config.PedMenuGroup = "group.admin"
-
-Config.EnableJobOutfitsCommand = false -- Enables /joboutfits and /gangoutfits commands
 
 Config.ShowNearestShopOnly = false
 Config.HideRadar = true -- Hides the minimap while the appearance menu is open
@@ -122,7 +120,7 @@ Config.Blips = {
         Name = "Tattoo Shop",
     },
     ["surgeon"] = {
-        Show = true,
+        Show = false,
         Sprite = 102,
         Color = 4,
         Scale = 0.7,
@@ -545,15 +543,17 @@ Config.Stores = {
     },
     {
         type = "surgeon",
-        coords = vector4(298.78, -572.81, 43.26, 114.27),
+        coords = vector4(343.98, -590.57, 43.28, 233.22), -- Pillbox "treatment room"
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
         points = {
+            /*
             vector3(298.84417724609, -572.92205810547, 43.26),
             vector3(296.39556884766, -575.65942382812, 43.26),
             vector3(293.56317138672, -572.60675048828, 43.26),
             vector3(296.28656005859, -570.330078125, 43.26)
+            */
         }
     }
 }
@@ -567,6 +567,7 @@ Config.ClothingRooms = {
         rotation = 45,
         usePoly = false,
         points = {
+            /*
             vector3(460.41918945312, -993.11444091797, 30.69),
             vector3(449.39508056641, -993.60614013672, 30.69),
             vector3(449.88696289062, -990.23779296875, 30.69),
@@ -575,6 +576,7 @@ Config.ClothingRooms = {
             vector3(453.47863769531, -987.76928710938, 30.69),
             vector3(454.35513305664, -988.46459960938, 30.69),
             vector3(460.4231262207, -987.94573974609, 30.69)
+            */
         }
     },
     {
@@ -584,7 +586,7 @@ Config.ClothingRooms = {
         length = 3,
         zone = {
             shape = {
-                --[[
+                /*
                 vector2(460.41918945312, -993.11444091797),
                 vector2(449.39508056641, -993.60614013672),
                 vector2(449.88696289062, -990.23779296875),
@@ -593,7 +595,7 @@ Config.ClothingRooms = {
                 vector2(453.47863769531, -987.76928710938),
                 vector2(454.35513305664, -988.46459960938),
                 vector2(460.4231262207, -987.94573974609)
-                --]]
+                */
             },
             minZ = 30.69 - 1.5,
             maxZ = 30.69 + 1.5,
