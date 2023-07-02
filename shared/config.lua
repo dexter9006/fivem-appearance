@@ -21,7 +21,7 @@ Config.TextUIOptions = {
 }
 
 Config.NotifyOptions = {
-    position = "top-right"
+    position = "top-left"
 }
 
 Config.OutfitCodeLength = 10
@@ -69,7 +69,7 @@ Config.BossManagedOutfits = false -- Allows Job / Gang bosses to manage their ow
 
 Config.ReloadSkinCooldown = 5000
 
-Config.AutomaticFade = false -- Enables automatic fading and hides the Fade section from Hair
+Config.AutomaticFade = true -- Enables automatic fading and hides the Fade section from Hair
 
 -- ACE Permissions Config
 Config.EnableACEPermissions = false
@@ -80,12 +80,12 @@ Config.DisableComponents = {
     Masks = false,
     UpperBody = false,
     LowerBody = false,
-    Bags = false,
+    Bags = true,
     Shoes = false,
     ScarfAndChains = false,
-    BodyArmor = false,
+    BodyArmor = true,
     Shirts = false,
-    Decals = false,
+    Decals = true,
     Jackets = false
 }
 
@@ -192,7 +192,7 @@ Config.Stores = {
     },
     {
         type = "clothing",
-        coords = vector4(-705.5, -149.22, 37.42, 122),
+        coords = vector4(-704.89, -150.42, 37.42, 173.41),
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
@@ -205,7 +205,7 @@ Config.Stores = {
     },
     {
         type = "clothing",
-        coords = vector4(-1192.61, -768.4, 17.32, 216.6),
+        coords = vector4(-1194.53, -767.48, 17.32, 216.1),
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
@@ -231,7 +231,7 @@ Config.Stores = {
     },
     {
         type = "clothing",
-        coords = vector4(-168.73, -301.41, 39.73, 238.67),
+        coords = vector4(-168.8, -300.67, 39.73, 298.39),
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
@@ -270,7 +270,7 @@ Config.Stores = {
     },
     {
         type = "clothing",
-        coords = vector4(-1445.86, -240.78, 49.82, 36.17),
+        coords = vector4(-1446.47, -241.81, 49.82, 106.83),
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
@@ -296,7 +296,7 @@ Config.Stores = {
     },
     {
         type = "clothing",
-        coords = vector4(615.35, 2762.72, 42.09, 170.51),
+        coords = vector4(613.05, 2761.88, 42.09, 276.03),
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
@@ -322,7 +322,7 @@ Config.Stores = {
     },
     {
         type = "clothing",
-        coords = vector4(-3171.32, 1043.56, 20.86, 334.3),
+        coords = vector4(-3169.1, 1043.96, 20.86, 69.32),
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
@@ -346,6 +346,7 @@ Config.Stores = {
             vector3(-1093.1976318359, 2709.7365722656, 19.11)
         }
     },
+    /*
     {
         type = "clothing",
         coords = vector4(-1119.24, -1440.6, 5.23, 300.5),
@@ -359,9 +360,10 @@ Config.Stores = {
             vector3(-1128.4727783203, -1439.8254394531, 5.23)
         }
     },
+    */
     {
         type = "clothing",
-        coords = vector4(124.82, -224.36, 54.56, 335.41),
+        coords = vector4(127.27, -223.36, 54.56, 70.51),
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
@@ -548,12 +550,12 @@ Config.Stores = {
         rotation = 45,
         usePoly = false,
         points = {
-            /*
+            
             vector3(298.84417724609, -572.92205810547, 43.26),
             vector3(296.39556884766, -575.65942382812, 43.26),
             vector3(293.56317138672, -572.60675048828, 43.26),
             vector3(296.28656005859, -570.330078125, 43.26)
-            */
+            
         }
     }
 }
@@ -567,7 +569,7 @@ Config.ClothingRooms = {
         rotation = 45,
         usePoly = false,
         points = {
-            /*
+            
             vector3(460.41918945312, -993.11444091797, 30.69),
             vector3(449.39508056641, -993.60614013672, 30.69),
             vector3(449.88696289062, -990.23779296875, 30.69),
@@ -576,7 +578,7 @@ Config.ClothingRooms = {
             vector3(453.47863769531, -987.76928710938, 30.69),
             vector3(454.35513305664, -988.46459960938, 30.69),
             vector3(460.4231262207, -987.94573974609, 30.69)
-            */
+            
         }
     },
     {
@@ -586,7 +588,7 @@ Config.ClothingRooms = {
         length = 3,
         zone = {
             shape = {
-                /*
+                
                 vector2(460.41918945312, -993.11444091797),
                 vector2(449.39508056641, -993.60614013672),
                 vector2(449.88696289062, -990.23779296875),
@@ -595,7 +597,7 @@ Config.ClothingRooms = {
                 vector2(453.47863769531, -987.76928710938),
                 vector2(454.35513305664, -988.46459960938),
                 vector2(460.4231262207, -987.94573974609)
-                */
+                
             },
             minZ = 30.69 - 1.5,
             maxZ = 30.69 + 1.5,
