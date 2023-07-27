@@ -50,8 +50,7 @@ local function LoadPlayerUniform()
             TriggerEvent("illenium-appearance:client:loadJobOutfit", uniform)
             -- Vitto
             TriggerEvent("backitems:showagain")
-            print("Reload after uniform_Vitto")
-            ---------
+            --
         end
     end)
 end
@@ -110,11 +109,10 @@ end
 function InitializeCharacter(gender, onSubmit, onCancel)
     SetInitialClothes(Config.InitialPlayerClothes[gender])
     local config = getNewCharacterConfig()
+    TriggerServerEvent("illenium-appearance:server:ChangeRoutingBucket")
     -- Vitto
     TriggerEvent("backitems:displayItems", false)
-    print("Character creation mode_Vitto")
-    ---------
-    TriggerServerEvent("illenium-appearance:server:ChangeRoutingBucket")
+    --
     client.startPlayerCustomization(function(appearance)
         if (appearance) then
             TriggerServerEvent("illenium-appearance:server:saveAppearance", appearance)
@@ -125,12 +123,12 @@ function InitializeCharacter(gender, onSubmit, onCancel)
             onCancel()
         end
         Framework.CachePed()
+        -- Vitto
+        TriggerEvent("backitems:displayItems", true)
+        TriggerEvent("backitems:showagain")
+        --
         TriggerServerEvent("illenium-appearance:server:ResetRoutingBucket")
     end, config)
-    -- Vitto
-    TriggerEvent("backitems:showagain")
-    print("End of Character creation mode_Vitto")
-    ---------
 end
 
 function OpenShop(config, isPedMenu, shopType)
@@ -144,17 +142,15 @@ function OpenShop(config, isPedMenu, shopType)
             })
             return
         end
-
+        -- Vitto
+        TriggerEvent("backitems:displayItems", false)
+        --
         client.startPlayerCustomization(function(appearance)
             if appearance then
                 if not isPedMenu then
                     TriggerServerEvent("illenium-appearance:server:chargeCustomer", shopType)
                 end
                 TriggerServerEvent("illenium-appearance:server:saveAppearance", appearance)
-            -- Vitto
-            TriggerEvent("backitems:showagain")
-            print("End of Shopping mode_Vitto")
-            ---------
             else
                 lib.notify({
                     title = _L("cancelled.title"),
@@ -164,6 +160,10 @@ function OpenShop(config, isPedMenu, shopType)
                 })
             end
             Framework.CachePed()
+            -- Vitto
+            TriggerEvent("backitems:displayItems", true)
+            TriggerEvent("backitems:showagain")
+            --
         end, config)
     end, shopType)
 end
@@ -748,8 +748,7 @@ RegisterNetEvent("illenium-appearance:client:reloadSkin", function(bypassChecks)
         client.setPlayerAppearance(appearance)
         -- Vitto
         TriggerEvent("backitems:showagain")
-        print("Show Get Apprearance/Reload Skin")
-        ---------
+        --
         if Config.PersistUniforms then
             TriggerServerEvent("illenium-appearance:server:syncUniform", nil)
         end
