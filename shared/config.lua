@@ -12,7 +12,7 @@ Config.ChargePerTattoo = true -- Charge players per tattoo. Config.TattooCost wi
 -- Only set this to true if you're using rcore_tattoos
 Config.RCoreTattoosCompatibility = false
 
-Config.AsynchronousLoading = false -- Change this to false if you want the NUI data to load before displaying the appearance UI
+Config.AsynchronousLoading = true -- Change this to false if you want the NUI data to load before displaying the appearance UI
 
 Config.UseTarget = true
 
@@ -55,7 +55,7 @@ Config.NewCharacterSections = {
     HeadOverlays = true,
     Components = true,
     Props = true,
-    Tattoos = true
+    Tattoos = false
 }
 
 Config.GenderBasedOnPed = true
@@ -115,7 +115,7 @@ Config.Blips = {
     ["tattoo"] = {
         Show = true,
         Sprite = 75,
-        Color = 4,
+        Color = 0,
         Scale = 0.7,
         Name = "Tattoo Shop",
     },
