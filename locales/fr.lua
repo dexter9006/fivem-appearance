@@ -253,6 +253,10 @@ Locales["fr"] = {
             success = {
                 title = "Succès",
                 description = "Tenue supprimée"
+            },
+            failure = {
+                title = "Erreur",
+                description = "Erreur lors de la suppression de la tenue"
             }
         },
         manage = {
