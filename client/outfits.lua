@@ -116,6 +116,25 @@ function LoadJobOutfit(oData)
         end
     end
 
+    -- Vitto
+    -- Watches
+    if data["watches"] ~= nil then
+        if data["watches"].item ~= -1 and data["watches"].item ~= 0 then
+            SetPedPropIndex(ped, 6, data["watches"].item, data["watches"].texture, true)
+        else
+            ClearPedProp(ped, 6)
+        end
+    end
+    -- Bracelets
+    if data["bracelets"] ~= nil then
+        if data["bracelets"].item ~= -1 and data["bracelets"].item ~= 0 then
+            SetPedPropIndex(ped, 7, data["bracelets"].item, data["bracelets"].texture, true)
+        else
+            ClearPedProp(ped, 7)
+        end
+    end
+    --
+
     local length = 0
     for _ in pairs(data) do
         length = length + 1
