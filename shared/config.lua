@@ -569,7 +569,6 @@ Config.ClothingRooms = {
         rotation = 45,
         usePoly = false,
         points = {
-            
             vector3(460.41918945312, -993.11444091797, 30.69),
             vector3(449.39508056641, -993.60614013672, 30.69),
             vector3(449.88696289062, -990.23779296875, 30.69),
@@ -578,26 +577,18 @@ Config.ClothingRooms = {
             vector3(453.47863769531, -987.76928710938, 30.69),
             vector3(454.35513305664, -988.46459960938, 30.69),
             vector3(460.4231262207, -987.94573974609, 30.69)
-            
         }
     },
     {
         job = "ambulance",
-        coords = vector4(301.25, -599.87, 43.28, 193.4),    -- Gabz
-        width = 3,
-        length = 3,
+        coords = vector4(301.73, -600.15, 43.28, 247.48),    -- Gabz
+        size = vector3(4, 4, 4),
+        rotation = 45,
+        --width = 1,
+        --length = 1,
         zone = {
             shape = {
-                
-                vector2(460.41918945312, -993.11444091797),
-                vector2(449.39508056641, -993.60614013672),
-                vector2(449.88696289062, -990.23779296875),
-                vector2(450.97882080078, -989.71411132812),
-                vector2(451.0325012207, -987.89904785156),
-                vector2(453.47863769531, -987.76928710938),
-                vector2(454.35513305664, -988.46459960938),
-                vector2(460.4231262207, -987.94573974609)
-                
+                vector2(301.25, -599.87),
             },
             minZ = 30.69 - 1.5,
             maxZ = 30.69 + 1.5,
@@ -630,7 +621,7 @@ Config.Outfits = {
     ["police"] = {
         ["Male"] = {
             {
-                name = "Short Sleeve",
+                name = "Manches Courtes",
                 outfitData = {
                     ["pants"]       = { item = 24, texture = 0},  -- Pants
                     ["arms"]        = { item = 19, texture = 0},  -- Arms
@@ -643,11 +634,13 @@ Config.Outfits = {
                     ["hat"]         = { item = 46, texture = 0},  -- Hat
                     --["glass"]       = { item = 0, texture = 0},  -- Glasses
                     --["mask"]        = { item = 0, texture = 0},  -- Mask
+                    ["watches"] = {item = -1, texture = 0},
+                    ["bracelets"] = {item = -1, texture = 0}
                 },
                 grades = {0, 1, 2, 3, 4},
             },
             {
-                name = "Long Sleeve",
+                name = "Manches Longues",
                 outfitData = {
                    ["pants"]       = { item = 24, texture = 0},  -- Pants
                     ["arms"]        = { item = 20, texture = 0},  -- Arms
@@ -660,6 +653,8 @@ Config.Outfits = {
                     ["hat"]         = { item = 46, texture = 0},  -- Hat
                     --["glass"]       = { item = 0, texture = 0},  -- Glasses
                     --["mask"]         = { item = 0, texture = 0},  -- Mask
+                    ["watches"] = {item = -1, texture = 0},
+                    ["bracelets"] = {item = -1, texture = 0}
                 },
                 grades = {0, 1, 2, 3, 4},
             },
@@ -677,6 +672,8 @@ Config.Outfits = {
                     ["hat"]         = { item = 58, texture = 0},  -- Hat
                     --["glass"]       = { item = 0, texture = 0},  -- Glasses
                     --["mask"]         = { item = 0, texture = 0},  -- Mask
+                    ["watches"] = {item = -1, texture = 0},
+                    ["bracelets"] = {item = -1, texture = 0}
                 },
                 grades = {1, 2, 3, 4},
             },
@@ -694,6 +691,8 @@ Config.Outfits = {
                     ["hat"]         = { item = 58, texture = 2},  -- Hat
                     --["glass"]       = { item = 0, texture = 0},  -- Glasses
                     --["mask"]         = { item = 0, texture = 0},  -- Mask
+                    ["watches"] = {item = -1, texture = 0},
+                    ["bracelets"] = {item = -1, texture = 0}
                 },
                 grades = {2, 3, 4},
             },
@@ -711,13 +710,15 @@ Config.Outfits = {
                     ["hat"]         = { item = 149, texture = 0},  -- Hat
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 35, texture = 0},  -- Mask
+                    ["watches"] = {item = -1, texture = 0},
+                    ["bracelets"] = {item = -1, texture = 0}
                 },
                 grades = {3, 4},
             }
         },
         ["Female"] = {
             {
-                name = "Short Sleeve",
+                name = "Manches Courtes",
                 outfitData = {
                     ["pants"]       = { item = 133, texture = 0},  -- Pants
                     ["arms"]        = { item = 31, texture = 0},  -- Arms
@@ -730,11 +731,13 @@ Config.Outfits = {
                     ["hat"]         = { item = 0, texture = 0},  -- Hat
                     --["glass"]       = { item = 0, texture = 0},  -- Glasses
                     --["mask"]        = { item = 0, texture = 0},  -- Mask
+                    ["watches"] = {item = -1, texture = 0},
+                    ["bracelets"] = {item = -1, texture = 0}
                 },
                 grades = {0, 1, 2, 3, 4},
             },
             {
-                name = "Long Sleeve",
+                name = "Manches Longues",
                 outfitData = {
                     ["pants"]       = { item = 133, texture = 0},  -- Pants
                     ["arms"]        = { item = 31, texture = 0},  -- Arms
@@ -747,6 +750,8 @@ Config.Outfits = {
                     ["hat"]         = { item = 0, texture = 0},  -- Hat
                     --["glass"]       = { item = 0, texture = 0},  -- Glasses
                     --["mask"]        = { item = 0, texture = 0},  -- Mask
+                    ["watches"] = {item = -1, texture = 0},
+                    ["bracelets"] = {item = -1, texture = 0}
                 },
                 grades = {0, 1, 2, 3, 4},
             },
@@ -764,6 +769,8 @@ Config.Outfits = {
                     ["hat"]         = { item = 0, texture = 0},  -- Hat
                     --["glass"]       = { item = 0, texture = 0},  -- Glasses
                     --["mask"]        = { item = 0, texture = 0},  -- Mask
+                    ["watches"] = {item = -1, texture = 0},
+                    ["bracelets"] = {item = -1, texture = 0}
                 },
                 grades = {1, 2, 3, 4},
             },
@@ -781,6 +788,8 @@ Config.Outfits = {
                     ["hat"]         = { item = 0, texture = 0},  -- Hat
                     --["glass"]       = { item = 0, texture = 0},  -- Glasses
                     --["mask"]        = { item = 0, texture = 0},  -- Mask
+                    ["watches"] = {item = -1, texture = 0},
+                    ["bracelets"] = {item = -1, texture = 0}
                 },
                 grades = {2, 3, 4},
             },
@@ -798,6 +807,8 @@ Config.Outfits = {
                     ["hat"]         = { item = 149, texture = 0},  -- Hat
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 35, texture = 0},  -- Mask
+                    ["watches"] = {item = -1, texture = 0},
+                    ["bracelets"] = {item = -1, texture = 0}
                 },
                 grades = {3, 4},
             }
@@ -820,6 +831,8 @@ Config.Outfits = {
                     ["hat"]         = { item = 12, texture = -1},  -- Hat
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 0, texture = 0},  -- Mask
+                    ["watches"] = {item = -1, texture = 0},
+                    ["bracelets"] = {item = -1, texture = 0}
                 },
                 grades = {0, 1, 2, 3, 4},
             }
@@ -839,6 +852,8 @@ Config.Outfits = {
                     ["hat"]         = { item = -1, texture = -1},  -- Hat
                     ["glass"]       = { item = 0, texture = 0},  -- Glasses
                     ["mask"]        = { item = 0, texture = 0},  -- Mask
+                    ["watches"] = {item = -1, texture = 0},
+                    ["bracelets"] = {item = -1, texture = 0}
                 },
                 grades = {0, 1, 2, 3, 4},
             }
@@ -860,13 +875,15 @@ Config.Outfits = {
                     ["shoes"] = {item = 54, texture = 0}, -- Shoes
                     ["mask"] = {item = 121, texture = 0}, -- Mask
                     ["hat"] = {item = 122, texture = 0}, -- Hat
-                    ["glass"] = {item = 0, texture = 0}, -- Glasses
-                    ["ear"] = {item = 0, texture = 0} -- Ear accessories
+                    --["glass"] = {item = 0, texture = 0}, -- Glasses
+                    --["ear"] = {item = 0, texture = 0} -- Ear accessories
+                    ["watches"] = {item = -1, texture = 0},
+                    ["bracelets"] = {item = -1, texture = 0}
                 },
                 grades = {0, 1, 2, 3, 4},
             },
             {
-                name = "Polo",
+                name = "Intervention",
                 outfitData = {
                     ["arms"] = {item = 90, texture = 0}, -- Arms
                     ["t-shirt"] = {item = 15, texture = 0}, -- T-Shirt
@@ -879,13 +896,15 @@ Config.Outfits = {
                     ["shoes"] = {item = 54, texture = 0}, -- Shoes
                     ["mask"] = {item = 121, texture = 0}, -- Mask
                     ["hat"] = {item = 122, texture = 0}, -- Hat
-                    ["glass"] = {item = 0, texture = 0}, -- Glasses
-                    ["ear"] = {item = 0, texture = 0} -- Ear accessories
+                    --["glass"] = {item = 0, texture = 0}, -- Glasses
+                    --["ear"] = {item = 0, texture = 0} -- Ear accessories
+                    ["watches"] = {item = -1, texture = 0},
+                    ["bracelets"] = {item = -1, texture = 0}
                 },
                 grades = {2, 3, 4},
             },
             {
-                name = "Doctor",
+                name = "Docteur",
                 outfitData = {
                     ["arms"] = {item = 93, texture = 0}, -- Arms
                     ["t-shirt"] = {item = 32, texture = 3}, -- T-Shirt
@@ -896,10 +915,12 @@ Config.Outfits = {
                     ["bag"] = {item = 0, texture = 0}, -- Bag
                     ["pants"] = {item = 28, texture = 0}, -- Pants
                     ["shoes"] = {item = 10, texture = 0}, -- Shoes
-                    ["mask"] = {item = 0, texture = 0}, -- Mask
+                    --["mask"] = {item = 0, texture = 0}, -- Mask
                     ["hat"] = {item = -1, texture = 0}, -- Hat
-                    ["glass"] = {item = 0, texture = 0}, -- Glasses
-                    ["ear"] = {item = 0, texture = 0} -- Ear accessories
+                    --["glass"] = {item = 0, texture = 0}, -- Glasses
+                    --["ear"] = {item = 0, texture = 0}, -- Ear accessories
+                    ["watches"] = {item = -1, texture = 0},
+                    ["bracelets"] = {item = -1, texture = 0}
                 },
                 grades = {3, 4},
             }
@@ -919,8 +940,10 @@ Config.Outfits = {
                     ["shoes"] = {item = 55, texture = 0}, -- Shoes
                     ["mask"] = {item = 121, texture = 0}, -- Mask
                     ["hat"] = {item = 121, texture = 0}, -- Hat
-                    ["glass"] = {item = 0, texture = 0}, -- Glasses
-                    ["ear"] = {item = 0, texture = 0} -- Ear accessories
+                    --["glass"] = {item = 0, texture = 0}, -- Glasses
+                    --["ear"] = {item = 0, texture = 0} -- Ear accessories
+                    ["watches"] = {item = -1, texture = 0},
+                    ["bracelets"] = {item = -1, texture = 0}
                 },
                 grades = {0, 1, 2, 3, 4},
             },
@@ -938,13 +961,15 @@ Config.Outfits = {
                     ["shoes"] = {item = 55, texture = 0}, -- Shoes
                     ["mask"] = {item = 121, texture = 0}, -- Mask
                     ["hat"] = {item = 121, texture = 0}, -- Hat
-                    ["glass"] = {item = 0, texture = 0}, -- Glasses
-                    ["ear"] = {item = 0, texture = 0} -- Ear accessories
+                    --["glass"] = {item = 0, texture = 0}, -- Glasses
+                    --["ear"] = {item = 0, texture = 0} -- Ear accessories
+                    ["watches"] = {item = -1, texture = 0},
+                    ["bracelets"] = {item = -1, texture = 0}
                 },
                 grades = {2, 3, 4},
             },
             {
-                name = "Doctor",
+                name = "Docteur",
                 outfitData = {
                     ["arms"] = {item = 105, texture = 0}, -- Arms
                     ["t-shirt"] = {item = 39, texture = 3}, -- T-Shirt
@@ -957,8 +982,10 @@ Config.Outfits = {
                     ["shoes"] = {item = 29, texture = 0}, -- Shoes
                     ["mask"] = {item = 0, texture = 0}, -- Mask
                     ["hat"] = {item = -1, texture = 0}, -- Hat
-                    ["glass"] = {item = 0, texture = 0}, -- Glasses
-                    ["ear"] = {item = 0, texture = 0} -- Ear accessories
+                    --["glass"] = {item = 0, texture = 0}, -- Glasses
+                    --["ear"] = {item = 0, texture = 0} -- Ear accessories
+                    ["watches"] = {item = -1, texture = 0},
+                    ["bracelets"] = {item = -1, texture = 0}
                 },
                 grades = {3, 4},
             }
