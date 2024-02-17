@@ -21,7 +21,7 @@ Config.TextUIOptions = {
 }
 
 Config.NotifyOptions = {
-    position = "top-left"
+    position = "left-center"
 }
 
 Config.OutfitCodeLength = 10
@@ -694,6 +694,7 @@ Config.Outfits = {
                 },
                 grades = {2, 3, 4},
             },
+            --[[
             {
                 name = "SWAT",
                 outfitData = {
@@ -713,6 +714,7 @@ Config.Outfits = {
                 },
                 grades = {3, 4},
             }
+            --]]
         },
         ["Female"] = {
             {
@@ -791,6 +793,7 @@ Config.Outfits = {
                 },
                 grades = {2, 3, 4},
             },
+            --[[
             {
                 name = "SWAT",
                 outfitData = {
@@ -810,8 +813,10 @@ Config.Outfits = {
                 },
                 grades = {3, 4},
             }
+            --]]
         }
     },
+    --[[
     ["realestate"] = {
         ["Male"] = {
             {
@@ -857,6 +862,7 @@ Config.Outfits = {
             }
         }
     },
+    --]]
     ["ambulance"] = {
         ["Male"] = {
             {
